@@ -1,12 +1,22 @@
 :root {
 	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	--app-bg-color: #242424;
+	--app-font-color: rgba(255, 255, 255, 0.87);
 
 	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
-	background-color: #242424;
-
+	color: var(--app-font-color);
+	background-color: var(--app-bg-color);
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.hero-bg {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+		url(./assets/440057-netflix-kingdom-season-2-wallpaper-hd-tv-series-4k-wallpaper.jpg);
 }

@@ -1,30 +1,26 @@
-import { Box, Button, Container } from "@mui/material";
-import { Language } from "../language/Language";
-import NetflixLogo from "../../assets/Netflix.png";
+import styled from "styled-components";
 
+import NetflixLogo from "../../assets/Netflix.png";
+import { Language } from "../language/Language";
+
+const Wrapper = styled.section`
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+`;
+
+const Image = styled.img`
+	width: 150px;
+	height: 150px;
+`;
 export const Navbar = () => {
 	return (
-		<Container
-			sx={{
-				display: "flex",
-				justifyContent: "space-between",
-				alignItems: "center",
-			}}>
-			<Box
-				component='img'
-				sx={{
-					width: "auto",
-					maxHeight: { xs: 133, md: 167 },
-				}}
+		<Wrapper>
+			<Image
 				src={NetflixLogo}
-				alt='Netflix logo'></Box>
-			<div></div>
-			<Box sx={{ display: "flex" }}>
-				<Language />
-				<Button variant='contained' color='error' sx={{ marginLeft: 3 }}>
-					Zaloguj
-				</Button>
-			</Box>
-		</Container>
+				alt="Netflix Logo"
+			/>
+			<h4>ddd</h4>
+		</Wrapper>
 	);
 };

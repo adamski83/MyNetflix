@@ -1,13 +1,11 @@
 import { MenuItem, TextField, useMediaQuery, useTheme } from "@mui/material";
 
-const currencies = [
-	{ value: "EN", label: "English" },
-	{ value: "DE", label: "Deutsch" },
-];
+import { currencies } from "../../constans";
+import { SM } from "../../variable";
 
 export const Language = () => {
 	const theme = useTheme();
-	const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+	const isMobile = useMediaQuery(theme.breakpoints.down(SM));
 
 	return (
 		<TextField
