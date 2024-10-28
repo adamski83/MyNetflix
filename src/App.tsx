@@ -1,11 +1,16 @@
-import styled from "styled-components";
-
+import { MainBackgroundComponent } from "./components/mainBackground/MainBackground";
 import { Navbar } from "./components/Navbar/Navbar";
 
 import "./App.css";
 
 function App() {
-	return <Navbar />;
+	return (
+		<>
+			<MainBackgroundComponent>
+				<Navbar />
+			</MainBackgroundComponent>
+		</>
+	);
 }
 
 export default App;
