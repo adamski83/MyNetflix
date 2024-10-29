@@ -11,7 +11,7 @@ export const NavbarContainer = styled.nav`
 	padding: 1em 2em;
 	position: fixed;
 	top: 0;
-	z-index: 1000;
+	z-index: ${themes.light.zIndex.modal};
 `;
 
 export const Logo = styled.img`
@@ -50,4 +50,3 @@ export const Button = styled.button`
 		padding: 0.7em 1.5em;
 	}
 `;
-
