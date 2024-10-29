@@ -1,48 +1,22 @@
-import { MenuItem, TextField, useMediaQuery, useTheme } from "@mui/material";
+import { useMediaQuery } from "react-responsive";
 
-const currencies = [
-	{ value: "EN", label: "English" },
-	{ value: "DE", label: "Deutsch" },
-];
+import { currencies } from "../../constans";
+import { SM } from "../../variable";
+import * as S from "./Language.styled";
 
 export const Language = () => {
-	const theme = useTheme();
-	const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+	const isMobile = useMediaQuery({ maxWidth: SM });
 
 	return (
-		<TextField
-			id='outlined-select-currency'
-			color='primary'
-			select
-			defaultValue='EN'
-			InputLabelProps={{
-				style: { color: "white" },
-			}}
-			InputProps={{
-				style: { color: "white" },
-				classes: {
-					notchedOutline: {
-						"&:focus": {
-							borderColor: "white",
-						},
-					},
-				},
-			}}
-			SelectProps={{
-				MenuProps: {
-					PaperProps: {
-						style: {
-							backgroundColor: "black",
-							color: "white",
-						},
-					},
-				},
-			}}>
+		<S.StyledSelect defaultValue="EN">
 			{currencies.map((option) => (
-				<MenuItem key={option.value} value={option.value}>
+				<S.StyledOption
+					key={option.value}
+					value={option.value}
+				>
 					{isMobile ? option.value : option.label}
-				</MenuItem>
+				</S.StyledOption>
 			))}
-		</TextField>
+		</S.StyledSelect>
 	);
 };
