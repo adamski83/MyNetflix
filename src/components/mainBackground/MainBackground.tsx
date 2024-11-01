@@ -9,6 +9,7 @@ interface BackgroundProps {
 
 const MainBackground = styled.div<BackgroundProps>`
 	height: 100vh;
+
 	background-image: url(${(props) => props.imageUrl});
 	background-size: cover;
 	background-position: center;
