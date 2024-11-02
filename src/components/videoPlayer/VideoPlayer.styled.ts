@@ -1,21 +1,27 @@
 import styled from "styled-components";
+
 import { themes } from "../../themes";
 
 export const VideoPlayerContainer = styled.div`
-	position: absolute;
-	top: 15%;
-	width: 90%;
-	max-width: auto;
+	display: flex;
+	justify-content: center; /* Wyśrodkowanie wertykalne */
+	width: 100%;
+	margin: 0 auto;
+
+	@media (max-width: 480px) {
+		font-size: 0.75em;
+	}
 `;
 
 export const Video = styled.video`
-	width: 100%;
-	height: auto;
+	width: 80%;
+	height: 40vw;
+	margin: 0 auto;
 `;
 
 export const OverlayText = styled.div`
 	position: absolute;
-	top: 50%;
+	top: 30%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: ${themes.light.background};
@@ -27,6 +33,8 @@ export const OverlayText = styled.div`
 	}
 
 	@media (max-width: 480px) {
-		font-size: 0.75em;
+		font-size: 1em;
+		top: 20%;
+		left: 50%;
 	}
 `;

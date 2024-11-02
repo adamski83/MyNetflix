@@ -11,7 +11,8 @@ export const NavbarContainer = styled.nav`
 `;
 
 export const Logo = styled.img`
-	width: 12em;
+	width: 8em;
+	height: 6em;
 
 	@media (max-width: 768px) {
 		width: 8em;
@@ -34,23 +35,23 @@ export const NavLinks = styled.div`
 `;
 
 export const Button = styled.button`
-	background-color: ${themes.light.primary};
+	background-color: ${themes.light.background};
 	padding: 0.7em 1.5em;
-	height: 2.4em;
 	width: 8em;
-	line-height: 100%;
 	border-radius: 5%;
-	color: ${themes.light.background};
-	border: none;
+	color: ${themes.light.text};
+	border-radius: 25px;
+	outline: none;
+	text-align: center;
 	cursor: pointer;
-	font-size: 1rem;
 
 	@media (max-width: 768px) {
-		width: 7em;
 		height: 2.75em;
 		display: flex;
 		font-size: 0.9rem;
+		font-weight: bold;
 		padding: 0.7em 1.5em;
 		margin-right: 1em;
+		margin-left: 0.5em;
 	}
 `;

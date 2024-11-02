@@ -1,3 +1,4 @@
+import { Input } from "./components/input/Input";
 import { MainBackgroundComponent } from "./components/mainBackground/MainBackground";
 import { Navbar } from "./components/Navbar/Navbar";
 import { VideoPlayer } from "./components/videoPlayer/VideoPlayer";
@@ -10,6 +11,7 @@ function App() {
 			<MainBackgroundComponent>
 				<Navbar />
 				<VideoPlayer />
+				<Input />
 			</MainBackgroundComponent>
 		</>
 	);
