@@ -1,3 +1,4 @@
+import { InfoBox } from "./components/infoBox/InfoBox";
 import { Input } from "./components/input/Input";
 import { MainBackgroundComponent } from "./components/mainBackground/MainBackground";
 import { Navbar } from "./components/Navbar/Navbar";
@@ -12,6 +13,7 @@ function App() {
 				<Navbar />
 				<VideoPlayer />
 				<Input />
+				<InfoBox />
 			</MainBackgroundComponent>
 		</>
 	);

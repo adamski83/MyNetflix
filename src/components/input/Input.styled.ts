@@ -7,7 +7,7 @@ export const InoputContainer = styled.div`
 	flex-direction: column;
 	margin: 2em 0 2em 0;
 	gap: 1rem;
-	width: 100%;
+	width: 90%;
 `;
 
 export const Input = styled.input`
@@ -18,7 +18,7 @@ export const Input = styled.input`
 	border-radius: 2em;
 	text-align: center;
 	font-size: 1em;
-	width: 90%;
+	width: 100%;
 
 	@media (max-width: 480px) {
 		height: 3em;

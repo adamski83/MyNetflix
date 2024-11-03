@@ -15,7 +15,7 @@ export const Logo = styled.img`
 	height: 6em;
 
 	@media (max-width: 768px) {
-		width: 8em;
+		width: 30%;
 		margin-right: 2em;
 	}
 `;
@@ -24,12 +24,13 @@ export const NavLinks = styled.div`
 	display: flex;
 	width: 25%;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	margin-right: 2em;
+	margin-left: 3em;
 
 	@media (max-width: 768px) {
 		flex-direction: row;
-		width: 50%;
+		width: 70%;
 		margin-right: 0;
 	}
 `;
@@ -46,9 +47,9 @@ export const Button = styled.button`
 	cursor: pointer;
 
 	@media (max-width: 768px) {
-		height: 2.75em;
 		display: flex;
-		font-size: 0.9rem;
+		width: 8em;
+		font-size: 0.8rem;
 		font-weight: bold;
 		padding: 0.7em 1.5em;
 		margin-right: 1em;
