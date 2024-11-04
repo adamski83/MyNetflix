@@ -11,8 +11,8 @@ export const InoputContainer = styled.div`
 `;
 
 export const Input = styled.input`
-	height: 4em;
 	margin: 0 auto;
+	padding: 1em;
 	border: 1px solid ${themes.light.dimGray};
 	color: ${themes.light.background};
 	border-radius: 2em;
@@ -32,9 +32,9 @@ export const Input = styled.input`
 
 export const Button = styled.button`
 	margin: 0 auto;
-	height: 4em;
 	width: 50%;
-	font-weight: bold;
+	padding: 1em;
+	font-weight: 700;
 	font-size: 1em;
 	background-color: ${themes.light.primary};
 	color: ${themes.light.background};

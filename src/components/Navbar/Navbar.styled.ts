@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+import { typography } from "../../styles/typography";
 import { themes } from "../../themes";
 
 export const NavbarContainer = styled.nav`
@@ -37,12 +38,14 @@ export const NavLinks = styled.div`
 
 export const Button = styled.button`
 	background-color: ${themes.light.background};
+	font-family: ${typography.fontFamily.secondary};
 	padding: 0.7em 1.5em;
 	width: 8em;
 	border-radius: 5%;
 	color: ${themes.light.text};
 	border-radius: 25px;
 	outline: none;
+	font-weight: 700;
 	text-align: center;
 	cursor: pointer;
 
@@ -50,7 +53,6 @@ export const Button = styled.button`
 		display: flex;
 		width: 8em;
 		font-size: 0.8rem;
-		font-weight: bold;
 		padding: 0.7em 1.5em;
 		margin-right: 1em;
 		margin-left: 0.5em;

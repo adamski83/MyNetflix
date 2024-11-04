@@ -38,3 +38,7 @@ export const OverlayText = styled.div`
 		left: 50%;
 	}
 `;
+
+export const Paragraph = styled.p`
+	text-align: center;
+`;

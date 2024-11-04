@@ -16,7 +16,9 @@ export const VideoPlayer = () => {
 			</S.Video>
 			<S.OverlayText>
 				Unbegrenzte Filme, Serien und mehr <br />
-				<p style={{ textAlign: "center" }}>Bereits ab 4.99$. Jetzt kundbar.</p>
+				<S.Paragraph style={{ textAlign: "center" }}>
+					Bereits ab 4.99$. Jetzt kundbar.
+				</S.Paragraph>
 			</S.OverlayText>
 		</S.VideoPlayerContainer>
 	);
