@@ -1,17 +1,11 @@
-import { MainBackgroundComponent } from "./components/mainBackground/MainBackground";
-import { Navbar } from "./components/Navbar/Navbar";
-
-import "./App.css";
+import { Home } from "./layouts/Home";
 
 function App() {
 	return (
 		<>
-			<MainBackgroundComponent>
-				<Navbar />
-			</MainBackgroundComponent>
+			<Home />
 		</>
 	);
 }
 
 export default App;
- 

@@ -11,7 +11,7 @@ export const Navbar = () => {
 			/>
 			<S.NavLinks>
 				<Language />
-				<S.Button>Sign In</S.Button>
+				<S.Button>Einloggen</S.Button>
 			</S.NavLinks>
 		</S.NavbarContainer>
 	);

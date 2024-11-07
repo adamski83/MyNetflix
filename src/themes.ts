@@ -5,6 +5,11 @@ type Theme = {
 		background: string;
 		text: string;
 		dimGray: string;
+		lightGray: string;
+		lightGrayHover: string;
+		darkGray: string;
+		parisBlue: string;
+		infoHoverBox: string;
 		zIndex: {
 			modal: number;
 			tooltip: number;
@@ -34,6 +39,11 @@ export const themes: Theme = {
 		background: "#ffffff",
 		text: "#000000",
 		dimGray: "#696969",
+		lightGray: "rgba(155, 155, 155, 0.9)",
+		lightGrayHover: "rgba(55, 55, 55, 0.4)",
+		darkGray: "rgba(155, 155, 155, 0.4)",
+		parisBlue: "rgba(31, 38, 135, 0.37)",
+		infoHoverBox: "rgba(255, 255, 255, 0.4)",
 		zIndex: {
 			modal: 1000,
 			tooltip: 2000,

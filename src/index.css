@@ -1,5 +1,5 @@
 :root {
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	/* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
 	--app-bg-color: #242424;
 	--app-font-color: rgba(255, 255, 255, 0.87);
 
@@ -10,10 +10,6 @@
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
-body {
-	margin: 0;
-	padding: 0;
 }
 
 .hero-bg {

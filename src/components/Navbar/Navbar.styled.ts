@@ -1,52 +1,60 @@
 import styled from "styled-components";
 
+import { typography } from "../../styles/typography";
 import { themes } from "../../themes";
 
 export const NavbarContainer = styled.nav`
-	width: 100%;
 	background-color: transparent;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1em 2em;
-	position: fixed;
-	top: 0;
-	z-index: ${themes.light.zIndex.modal};
+	width: 100%;
 `;
 
 export const Logo = styled.img`
-	width: 12em;
+	width: 8em;
+	height: 6em;
 
 	@media (max-width: 768px) {
-		width: 8em;
+		width: 30%;
+		margin-right: 2em;
 	}
 `;
 
 export const NavLinks = styled.div`
 	display: flex;
+	width: 25%;
 	align-items: center;
+	justify-content: center;
+	margin-right: 2em;
+	margin-left: 3em;
 
 	@media (max-width: 768px) {
 		flex-direction: row;
-		width: 50%;
+		width: 70%;
+		margin-right: 0;
 	}
 `;
 
 export const Button = styled.button`
-	background-color: ${themes.light.primary};
+	background-color: ${themes.light.background};
+	font-family: ${typography.fontFamily.secondary};
 	padding: 0.7em 1.5em;
-	height: 2.4em;
-	line-height: 100%;
+	width: 8em;
 	border-radius: 5%;
-	color: ${themes.light.background};
-	border: none;
+	color: ${themes.light.text};
+	border-radius: 25px;
+	outline: none;
+	font-weight: 700;
+	text-align: center;
 	cursor: pointer;
-	font-size: 1rem;
-	margin: 0 1em 0 1em;
 
 	@media (max-width: 768px) {
-		width: 100%;
-		font-size: 0.9rem;
+		display: flex;
+		width: 8em;
+		font-size: 0.8rem;
 		padding: 0.7em 1.5em;
+		margin-right: 1em;
+		margin-left: 0.5em;
 	}
 `;
