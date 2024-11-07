@@ -1,3 +1,4 @@
+import { Button } from "../Button/Button";
 import * as S from "./Input.styled";
 
 export const Input = () => {
@@ -7,7 +8,12 @@ export const Input = () => {
 				type="text"
 				placeholder="E-Mail-Adresse"
 			/>
-			<S.Button>Loslegen</S.Button>
+			<Button
+				variant="secondary"
+				size="large"
+			>
+				Loslegen
+			</Button>
 		</S.InoputContainer>
 	);
 };

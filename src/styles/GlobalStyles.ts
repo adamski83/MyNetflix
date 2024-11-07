@@ -16,14 +16,14 @@ font-display: swap;
 	@font-face {
 		font-family: 'Aceepfimer-Regular';
 		src: url(	${AceepfimerRegular}) format('truetype');
-		font-weight: 700;
+		font-weight: 400;
 		font-style: normal;
 		font-display: swap;
 	}
 	@font-face {
 		font-family:	'Adaadah'; 
 		src: url( ${Adaadah}) format('truetype');
-		font-weight: 700;
+		font-weight: 500;
 		font-style: normal;
 		font-display: swap;
 	}
@@ -37,6 +37,6 @@ font-display: swap;
 
   body {
     font-family: 'Aceepfimer-Bold', sans-serif;
-    font-weight: 400;
+    font-weight: 700;
   }
 `;
