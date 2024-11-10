@@ -7,11 +7,11 @@ const getVariantStyles = (variant: ButtonVariant = "primary") => {
 	const variants = {
 		primary: css`
 			background-color: ${themes.light.primary};
-			color: ${"white"};
+			color: ${themes.light.background};
 			border: none;
 
 			&:hover {
-				background-color: ${"red"};
+				background-color: ${themes.light.secondary};
 			}
 		`,
 		secondary: css`

@@ -1,48 +1,44 @@
 import styled from "styled-components";
-
 import { themes } from "../../themes";
 
-export const InoputContainer = styled.div`
-	display: flex;
-	flex-direction: column;
-	margin: 2em 0 2em 0;
-	gap: 1rem;
-	width: 90%;
+const breakpoints = {
+	mobile: "320px",
+	tablet: "768px",
+	laptop: "1024px",
+	desktop: "1440px",
+};
+
+export const InputContainer = styled.div`
+	width: 90%; // Kontener zajmuje 90% szerokości rodzica
+	max-width: 600px; // Maksymalna szerokość
+	margin: 0 auto;
+	padding: 0 1em;
+
+	@media (max-width: ${breakpoints.mobile}) {
+		width: 95%;
+		padding: 0 0.5em;
+	}
 `;
 
-export const Input = styled.input`
-	margin: 0 auto;
+export const StyledInput = styled.input`
+	width: 100%;
 	padding: 1em;
 	border: 1px solid ${themes.light.dimGray};
 	color: ${themes.light.background};
 	border-radius: 2em;
 	text-align: center;
-	font-size: 1em;
-	width: 100%;
+	transition: all 0.3s ease-in-out;
+	box-sizing: border-box; // Zapobiega przekraczaniu szerokości
 
-	@media (max-width: 480px) {
-		height: 3em;
+	@media (max-width: ${breakpoints.mobile}) {
+		font-size: 0.875em;
+		padding: 0.75em;
+		height: 2.5em;
 	}
 
-	&::placeholder {
-		color: ${themes.light.background};
-		opacity: 0.6;
-	}
-`;
-
-export const Button = styled.button`
-	margin: 0 auto;
-	width: 50%;
-	padding: 1em;
-	font-weight: 700;
-	font-size: 1em;
-	background-color: ${themes.light.primary};
-	color: ${themes.light.background};
-	outline: none;
-	border: none;
-	border-radius: 2em;
-
-	@media (max-width: 480px) {
+	@media (min-width: ${breakpoints.mobile}) and (max-width: ${breakpoints.tablet}) {
+		font-size: 1em;
+		padding: 0.85em;
 		height: 3em;
 	}
 `;

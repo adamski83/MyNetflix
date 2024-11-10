@@ -1,3 +1,8 @@
-import styled from "styled-components";
+import { StyledTypography } from "./Typography.styled";
+import { TypographyProps } from "./Typography.types";
 
-export const Typography = styled.div``;
+export const Typography: React.FC<
+	TypographyProps & { children: React.ReactNode }
+> = ({ children, ...props }) => {
+	return <StyledTypography {...props}>{children}</StyledTypography>;
+};
