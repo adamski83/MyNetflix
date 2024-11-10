@@ -4,7 +4,6 @@
 		sans-serif;
 	--app-bg-color: #242424;
 	--app-font-color: rgba(255, 255, 255, 0.87);
-
 	color-scheme: light dark;
 	color: var(--app-font-color);
 	background-color: var(--app-bg-color);

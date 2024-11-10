@@ -12,10 +12,10 @@ const breakpoints = {
 
 export const AdsPlanWrapper = styled.div`
 	display: flex;
-	flex-direction: row;
-	align-items: center;
-
+	flex-direction: ${({ direction }) => direction || "row"};
 	padding: 2rem;
+	flex-wrap: wrap;
+	gap: 2rem;
 	background: linear-gradient(
 		180deg,
 		${themes.light.NetflixGradientPurple} 0%,
@@ -24,6 +24,7 @@ export const AdsPlanWrapper = styled.div`
 
 	@media (max-width: ${breakpoints.tablet}) {
 		padding: 1rem;
+		display: flex;
 		flex-direction: column;
 	}
 `;
@@ -36,6 +37,7 @@ export const ImageContainer = styled.div<ImageContainerProps>`
 	display: flex;
 	flex-direction: ${({ direction }) => direction || "column"};
 	width: 90%;
+	background: none;
 	max-width: 1200px;
 	margin: 2rem auto;
 
@@ -49,7 +51,7 @@ export const ImageContainer = styled.div<ImageContainerProps>`
 export const StyledImage = styled.img`
 	width: 70px;
 	height: auto;
+	background: none;
 	object-fit: cover;
 	border-radius: 8px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 `;
