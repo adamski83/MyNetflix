@@ -1,16 +1,17 @@
 import Chest from "../../assets/Chest.png";
-import * as S from "../ImageContainer/ImageContainer.styled";
-import { Typography } from "../typography/Typography";
-import { Navbar } from "../Navbar/Navbar";
+import movie from "../../assets/clapperboard-solid.svg";
+import clock from "../../assets/clock-regular.svg";
+import cloud from "../../assets/cloudflare-brands-solid.svg";
+import devices from "../../assets/house-laptop-solid.svg";
+import sword from "../../assets/khanda-solid.svg";
+import { themes } from "../../themes";
+import { Accordion } from "../Accordion/Accordion";
 import { StyledButton } from "../Button/Button.styled";
 import { DescriptionBox } from "../DescriptionBox/DescriptionBox";
-import { themes } from "../../themes";
+import * as S from "../ImageContainer/ImageContainer.styled";
+import { Navbar } from "../Navbar/Navbar";
 import { Testimonial } from "../Testimonial/Testimonial";
-import sword from "../../assets/khanda-solid.svg";
-import clock from "../../assets/clock-regular.svg";
-import movie from "../../assets/clapperboard-solid.svg";
-import devices from "../../assets/house-laptop-solid.svg";
-import cloud from "../../assets/cloudflare-brands-solid.svg";
+import { Typography } from "../typography/Typography";
 
 export const AdsPlan = () => {
 	return (
@@ -26,6 +27,7 @@ export const AdsPlan = () => {
 						variant="h3"
 						weight={700}
 						color={themes.light.background}
+						align="center"
 					>
 						Unser günstigstes: das Standard-Abo mit Werbung jetzt ausprobieren
 					</Typography>
@@ -60,6 +62,68 @@ export const AdsPlan = () => {
 					icon={cloud}
 					title="Alle Abenteuer auch offline dabei"
 					description="Serien und Filme herunterladen und unterwegs anschauen – wo auch immer."
+				/>
+			</S.AdsPlanWrapper>
+			<S.AdsPlanWrapper direction="column">
+				<Typography
+					variant="h3"
+					weight={700}
+					color={themes.light.background}
+					align="center"
+				>
+					Das Standard-Abo mit Werbung jetzt ausprobieren
+				</Typography>
+				<Typography
+					variant="h5"
+					weight={400}
+					color={themes.light.background}
+					align="center"
+				>
+					Das Standard-Abo mit Werbung jetzt ausprobieren
+				</Typography>
+				<StyledButton>Abo fur 4.99 E Starten</StyledButton>
+				<StyledButton variant="secondary">Alles Abos Vergleichen</StyledButton>
+				<Accordion
+					title="Wie funktioniert das Standard-Abo mit Werbung?"
+					content="Pro Stunde erwarten Sie wenige kurze Werbeunterbrechungen. Werbung wird, wenn möglich, an passenden Stellen in der Handlung gezeigt, um das Zuschauererlebnis nicht zu beeinträchtigen. Die Werbung wird vor und während ausgewählter Serien und Filme eingeblendet. Bei manchen kürzlich veröffentlichten Filmen gibt es Werbung nur vor Beginn des eigentlichen Titels.
+
+Wenn Sie „Pause“ wählen, wird die Anzahl der Werbeunterbrechungen auf dem Fortschrittsbalken angezeigt. Die Anzahl der Werbespots wird zu Beginn der jeweiligen Werbeunterbrechung rechts oben eingeblendet. Sie können Werbung nicht überspringen oder vorspulen."
+				/>
+				<Accordion
+					title="Wird in Kinderprofilen Werbung gezeigt?"
+					content="In Kinderprofilen wird keine Werbung gezeigt. Sie können Ihr Konto also weiterhin unbesorgt mit den Kindern in Ihrem Haushalt teilen."
+				/>
+				<Accordion
+					title="Ist mein Gerät kompatibel?"
+					content="Einige ältere Geräte und bestimmte Arten von Fernsehgeräten sind nicht mit dem Standard-Abo mit Werbung kompatibel."
+				/>
+				<Accordion
+					title="Wie funktioniert das Standard-Abo mit Werbung?"
+					content="Pro Stunde erwarten Sie wenige kurze Werbeunterbrechungen. Werbung wird, wenn möglich, an passenden Stellen in der Handlung gezeigt, um das Zuschauererlebnis nicht zu beeinträchtigen. Die Werbung wird vor und während ausgewählter Serien und Filme eingeblendet. Bei manchen kürzlich veröffentlichten Filmen gibt es Werbung nur vor Beginn des eigentlichen Titels.
+
+Wenn Sie „Pause“ wählen, wird die Anzahl der Werbeunterbrechungen auf dem Fortschrittsbalken angezeigt. Die Anzahl der Werbespots wird zu Beginn der jeweiligen Werbeunterbrechung rechts oben eingeblendet. Sie können Werbung nicht überspringen oder vorspulen."
+				/>
+				<Accordion
+					title="Welche Inhalte kann ich mit disem Abo ansehen ?"
+					content="Sie können Tausende von Serien und Filmen streamen und herunterladen sowie unzählige Spiele spielen. Der Großteil der Serien und Filme ist über ein werbefinanziertes Abo verfügbar. Nur eine kleine Anzahl ist aufgrund von Lizenzbedingungen nicht enthalten. Diese Titel werden mit einem Schloss-Symbol angezeigt."
+				/>
+				<Accordion
+					title="Wer kann mit dem Standard-Abo mit Werbung Mitglied werden?"
+					content="Das Standard-Abo mit Werbung steht Mitgliedern in folgenden Ländern zur Verfügung:
+Vereinigte Staaten,
+Australien,
+Brasilien,
+Kanada,
+Frankreich,
+Deutschland,
+Italien,
+Japan,
+Mexiko,
+Südkorea,
+Spanien,
+Vereinigtes Königreich,
+	
+Das Standard-Abo mit Werbung ist möglicherweise nicht bei allen externen Rechnungsstellungspartnern und Drittanbietern von Leistungspaketen verfügbar. Bitte informieren Sie sich bei Ihrem Anbieter, ob das Abo verfügbar ist."
 				/>
 			</S.AdsPlanWrapper>
 		</>

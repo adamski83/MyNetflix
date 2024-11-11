@@ -15,7 +15,7 @@ const getVariantStyles = (variant: ButtonVariant = "primary") => {
 			}
 		`,
 		secondary: css`
-			background-color: ${themes.light.secondary};
+			background-color: ${themes.light.lightGrayHover};
 			color: ${"white"};
 			border: none;
 		`,

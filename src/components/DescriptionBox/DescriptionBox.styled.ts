@@ -15,7 +15,7 @@ export const DescriptionBoxWrapper = styled.div`
 	padding: 25px;
 	border-radius: 10px;
 	margin-left: 30px;
-	width: 300px;
+	width: 90%;
 	backdrop-filter: blur(4.5px);
 	-webkit-backdrop-filter: blur(4.5px);
 	border-radius: 10px;

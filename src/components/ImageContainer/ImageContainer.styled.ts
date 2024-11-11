@@ -1,4 +1,3 @@
-// src/components/adsPlan/AdsPlan.styled.ts
 import styled from "styled-components";
 
 import { themes } from "../../themes";
@@ -15,6 +14,7 @@ export const AdsPlanWrapper = styled.div`
 	flex-direction: ${({ direction }) => direction || "row"};
 	padding: 2rem;
 	flex-wrap: wrap;
+	justify-content: center;
 	gap: 2rem;
 	background: linear-gradient(
 		180deg,
