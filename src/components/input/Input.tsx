@@ -1,19 +1,8 @@
-import { Button } from "../Button/Button";
+import React from "react";
 import * as S from "./Input.styled";
 
-export const Input = () => {
-	return (
-		<S.InoputContainer>
-			<S.Input
-				type="text"
-				placeholder="E-Mail-Adresse"
-			/>
-			<Button
-				variant="secondary"
-				size="large"
-			>
-				Loslegen
-			</Button>
-		</S.InoputContainer>
-	);
+export const Input: React.FC<React.InputHTMLAttributes<HTMLInputElement>> = (
+	props
+) => {
+	return <S.StyledInput {...props} />;
 };

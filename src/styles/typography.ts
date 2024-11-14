@@ -12,11 +12,11 @@ export const typography: DefaultTheme = {
 		bold: 700,
 	},
 	fontSize: {
-		xs: "0.75rem", // 12px
-		sm: "0.875rem", // 14px
-		base: "1rem", // 16px
-		lg: "1.125rem", // 18px
-		xl: "1.25rem", // 20px
-		"2xl": "1.5rem", // 24px
+		xs: "12px",
+		sm: "14px",
+		base: "16px",
+		lg: "18px",
+		xl: "20px",
+		"2xl": "24px",
 	},
 };

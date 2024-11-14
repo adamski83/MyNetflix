@@ -1,5 +1,3 @@
-import React from "react";
-
 import { StyledButton } from "./Button.styled";
 import { ButtonProps } from "./Button.types";
 
@@ -12,6 +10,7 @@ export const Button: React.FC<ButtonProps> = ({
 	startIcon,
 	endIcon,
 	disabled,
+	justify,
 	...props
 }) => {
 	return (

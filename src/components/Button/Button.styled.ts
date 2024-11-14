@@ -7,16 +7,16 @@ const getVariantStyles = (variant: ButtonVariant = "primary") => {
 	const variants = {
 		primary: css`
 			background-color: ${themes.light.primary};
-			color: ${"white"};
+			color: ${themes.light.background};
 			border: none;
 
 			&:hover {
-				background-color: ${"red"};
+				background-color: ${themes.light.secondary};
 			}
 		`,
 		secondary: css`
-			background-color: ${themes.light.secondary};
-			color: ${"white"};
+			background-color: ${themes.light.lightGrayHover};
+			color: ${themes.light.background};
 			border: none;
 		`,
 		outline: css`
@@ -25,7 +25,7 @@ const getVariantStyles = (variant: ButtonVariant = "primary") => {
 			color: ${themes.light.background};
 		`,
 		text: css`
-			background-color: transparent;
+			background-color: ${themes.light.lightGrayHover};
 			border: none;
 			color: ${themes.light.background};
 			padding: 0;
@@ -59,7 +59,7 @@ const getSizeStyles = (size: ButtonSize = "medium") => {
 export const StyledButton = styled.button<ButtonProps>`
 	display: inline-flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: ${({ justifyContent }) => justifyContent || "center"};
 	gap: 8px;
 	border-radius: 4px;
 	font-weight: 500;
@@ -68,18 +68,18 @@ export const StyledButton = styled.button<ButtonProps>`
 
 	${({ variant }) => getVariantStyles(variant)}
 	${({ size }) => getSizeStyles(size)}
-  ${({ isFullWidth }) =>
+	${({ isFullWidth }) =>
 		isFullWidth &&
 		css`
 			width: 100%;
 		`}
-  ${({ disabled }) =>
+	${({ disabled }) =>
 		disabled &&
 		css`
 			opacity: 0.5;
 			cursor: not-allowed;
 		`}
-  
+	
 	&:hover {
 		scale: 1.05;
 	}

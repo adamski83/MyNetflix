@@ -10,6 +10,8 @@ type Theme = {
 		darkGray: string;
 		parisBlue: string;
 		infoHoverBox: string;
+		NetflixGradientPurple: string;
+		NetflixGradientPink: string;
 		zIndex: {
 			modal: number;
 			tooltip: number;
@@ -44,6 +46,8 @@ export const themes: Theme = {
 		darkGray: "rgba(155, 155, 155, 0.4)",
 		parisBlue: "rgba(31, 38, 135, 0.37)",
 		infoHoverBox: "rgba(255, 255, 255, 0.4)",
+		NetflixGradientPurple: "rgba(2, 0, 36, 1)",
+		NetflixGradientPink: "rgba(148, 22, 94, 1)",
 		zIndex: {
 			modal: 1000,
 			tooltip: 2000,
@@ -64,4 +68,18 @@ export const themes: Theme = {
 			navbar: 4000,
 		},
 	},
+};
+
+type Breakpoints = {
+	mobile: string;
+	tablet: string;
+	laptop: string;
+	desktop: string;
+};
+
+export const breakpoints: Breakpoints = {
+	mobile: "320px",
+	tablet: "768px",
+	laptop: "1024px",
+	desktop: "1440px",
 };

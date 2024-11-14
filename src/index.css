@@ -1,8 +1,9 @@
 :root {
-	/* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
+	font-family:
+		Netflix Sans,
+		sans-serif;
 	--app-bg-color: #242424;
 	--app-font-color: rgba(255, 255, 255, 0.87);
-
 	color-scheme: light dark;
 	color: var(--app-font-color);
 	background-color: var(--app-bg-color);
