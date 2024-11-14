@@ -14,8 +14,8 @@ export const Home = () => {
 				<VideoPlayer />
 				<Wrapper
 					direction="row"
-					gap="1rem"
-					padding="1rem"
+					gap="16px"
+					padding="16px"
 				>
 					<Input />
 					<Button

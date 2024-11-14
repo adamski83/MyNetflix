@@ -5,13 +5,13 @@ import * as S from "./Testimonial.styled";
 interface TestimonialProps {
 	icon: string;
 	title: string;
-	description: string;
+	children: React.ReactNode;
 }
 
 export const Testimonial: React.FC<TestimonialProps> = ({
 	icon,
 	title,
-	description,
+	children,
 }) => {
 	return (
 		<S.TestimonialWrapper>
@@ -36,7 +36,7 @@ export const Testimonial: React.FC<TestimonialProps> = ({
 					weight={400}
 					gutterBottom
 				>
-					{description}
+					{children}
 				</Typography>
 			</S.TestimonialItem>
 		</S.TestimonialWrapper>

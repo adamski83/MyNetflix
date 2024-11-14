@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { themes } from "../../themes";
+import { breakpoints, themes } from "../../themes";
 
 export const AccordionWrapper = styled.div`
 	width: 100%;
@@ -14,18 +14,18 @@ export const AccordionHeader = styled.div`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem;
-	background-color: ${({ theme }) => themes.light.dimGray};
+	padding: 16px;
+	background: ${({ theme }) => themes.light.dimGray};
 	color: ${({ theme }) => themes.light.background};
 	cursor: pointer;
-	transition: all 0.3s ease;
+	transition: background 0.3s ease;
 
 	&:hover {
-		background-color: ${({ theme }) => themes.light.lightGray};
+		background: ${({ theme }) => themes.light.lightGray};
 	}
 
-	@media (max-width: 768px) {
-		padding: 0.8rem;
+	@media (max-width: ${breakpoints.tablet}) {
+		padding: 12px;
 	}
 `;
 
@@ -37,12 +37,12 @@ export const AccordionContent = styled.div<{ isOpen: boolean }>`
 `;
 
 export const ContentInner = styled.div`
-	padding: 1rem;
+	padding: 16px;
 	color: ${({ theme }) => themes.light.background};
 
-	@media (max-width: 768px) {
-		padding: 0.8rem;
-		font-size: 0.9rem;
+	@media (max-width: ${breakpoints.tablet}) {
+		padding: 13px;
+		font-size: 14px;
 	}
 `;
 

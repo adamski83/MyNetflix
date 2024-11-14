@@ -24,7 +24,7 @@ export const AdsPlan = () => {
 						alt="Placeholder"
 					/>
 					<Typography
-						variant="h3"
+						variant="h1"
 						weight={700}
 						color={themes.light.background}
 						align="center"
@@ -41,32 +41,42 @@ export const AdsPlan = () => {
 				<Testimonial
 					icon={sword}
 					title="Action ohne Werbeunterbrechung"
-					description="Wenige kurze Werbespots – genau so platziert, um wichtige Momente ungestört zu genießen."
-				/>
+				>
+					Wenige kurze Werbespots – genau so platziert, um wichtige Momente
+					ungestört zu genießen.
+				</Testimonial>
 				<Testimonial
 					icon={clock}
 					title="Nur ein paar Minuten Werbung pro Stunde"
-					description="Genug Zeit, um sich zu stretchen oder nochmal in die Chipstüte zu greifen."
-				/>
+				>
+					Genug Zeit, um sich zu stretchen oder nochmal in die Chipstüte zu
+					greifen.
+				</Testimonial>
 				<Testimonial
 					icon={movie}
 					title="Höhere Auflösung, niedriger Preis"
-					description="60 % günstiger als unser Standard-Abo und trotzdem komplett in Full HD (1080p)."
-				/>
+				>
+					60 % günstiger als unser Standard-Abo und trotzdem komplett in Full HD
+					(1080p).
+				</Testimonial>
 				<Testimonial
 					icon={devices}
 					title="Auf 2 Geräten streamen"
-					description="Bis zu 5 Profile pro Haushalt erstellen und auf 2 Geräten gleichzeitig schauen."
-				/>
+				>
+					Bis zu 5 Profile pro Haushalt erstellen und auf 2 Geräten gleichzeitig
+					schauen.
+				</Testimonial>
 				<Testimonial
 					icon={cloud}
 					title="Alle Abenteuer auch offline dabei"
-					description="Serien und Filme herunterladen und unterwegs anschauen – wo auch immer."
-				/>
+				>
+					Serien und Filme herunterladen und unterwegs anschauen – wo auch
+					immer.
+				</Testimonial>
 			</S.AdsPlanWrapper>
 			<S.AdsPlanWrapper direction="column">
 				<Typography
-					variant="h3"
+					variant="h2"
 					weight={700}
 					color={themes.light.background}
 					align="center"
@@ -74,12 +84,12 @@ export const AdsPlan = () => {
 					Das Standard-Abo mit Werbung jetzt ausprobieren
 				</Typography>
 				<Typography
-					variant="h5"
+					variant="h3"
 					weight={400}
 					color={themes.light.background}
 					align="center"
 				>
-					Das Standard-Abo mit Werbung jetzt ausprobieren
+					… und jederzeit ändern oder kündigen.
 				</Typography>
 				<StyledButton>Abo fur 4.99 E Starten</StyledButton>
 				<StyledButton variant="secondary">Alles Abos Vergleichen</StyledButton>

@@ -1,12 +1,6 @@
 import styled from "styled-components";
-import { themes } from "../../themes";
 
-const breakpoints = {
-	mobile: "320px",
-	tablet: "768px",
-	laptop: "1024px",
-	desktop: "1440px",
-};
+import { breakpoints, themes } from "../../themes";
 
 export const InputContainer = styled.div`
 	width: 90%; // Kontener zajmuje 90% szerokości rodzica

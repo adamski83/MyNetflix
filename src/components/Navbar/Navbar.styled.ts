@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import { typography } from "../../styles/typography";
-import { themes } from "../../themes";
+import { breakpoints, themes } from "../../themes";
 
 export const NavbarContainer = styled.nav`
 	background-color: transparent;
@@ -12,8 +12,8 @@ export const NavbarContainer = styled.nav`
 `;
 
 export const Logo = styled.img`
-	width: 8em;
-	height: 6em;
+	width: 120px;
+	height: 100px;
 
 	@media (max-width: 768px) {
 		width: 30%;
@@ -26,10 +26,10 @@ export const NavLinks = styled.div`
 	width: 25%;
 	align-items: center;
 	justify-content: center;
-	margin-right: 2em;
-	margin-left: 3em;
+	margin-right: 32px;
+	margin-left: 48px;
 
-	@media (max-width: 768px) {
+	@media (max-width: ${breakpoints.tablet}) {
 		flex-direction: row;
 		width: 70%;
 		margin-right: 0;
@@ -39,8 +39,8 @@ export const NavLinks = styled.div`
 export const Button = styled.button`
 	background-color: ${themes.light.background};
 	font-family: ${typography.fontFamily.secondary};
-	padding: 0.7em 1.5em;
-	width: 8em;
+	padding: 10px 20px;
+	width: 120px;
 	border-radius: 5%;
 	color: ${themes.light.text};
 	border-radius: 25px;
@@ -49,12 +49,12 @@ export const Button = styled.button`
 	text-align: center;
 	cursor: pointer;
 
-	@media (max-width: 768px) {
+	@media (max-width: ${breakpoints.tablet}) {
 		display: flex;
-		width: 8em;
-		font-size: 0.8rem;
-		padding: 0.7em 1.5em;
-		margin-right: 1em;
-		margin-left: 0.5em;
+		width: 12px;
+		font-size: 12px;
+		padding: 10px 20px;
+		margin-right: 16px;
+		margin-left: 8px;
 	}
 `;

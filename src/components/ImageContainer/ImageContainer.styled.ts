@@ -1,21 +1,18 @@
 import styled from "styled-components";
 
-import { themes } from "../../themes";
+import { breakpoints, themes } from "../../themes";
 
-const breakpoints = {
-	mobile: "320px",
-	tablet: "768px",
-	laptop: "1024px",
-	desktop: "1440px",
+type AdsPlanWrapper = {
+	direction?: string;
 };
 
-export const AdsPlanWrapper = styled.div`
+export const AdsPlanWrapper = styled.div<AdsPlanWrapper>`
 	display: flex;
 	flex-direction: ${({ direction }) => direction || "row"};
-	padding: 2rem;
+	padding: 32px;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 2rem;
+	gap: 32px;
 	background: linear-gradient(
 		180deg,
 		${themes.light.NetflixGradientPurple} 0%,
@@ -23,7 +20,7 @@ export const AdsPlanWrapper = styled.div`
 	);
 
 	@media (max-width: ${breakpoints.tablet}) {
-		padding: 1rem;
+		padding: 16px;
 		display: flex;
 		flex-direction: column;
 	}
@@ -39,11 +36,11 @@ export const ImageContainer = styled.div<ImageContainerProps>`
 	width: 90%;
 	background: none;
 	max-width: 1200px;
-	margin: 2rem auto;
+	margin: 32px auto;
 
 	@media (max-width: ${breakpoints.tablet}) {
 		width: 95%;
-		margin: 1rem auto;
+		margin: 16px auto;
 		align-items: center;
 	}
 `;

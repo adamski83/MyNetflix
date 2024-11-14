@@ -69,3 +69,17 @@ export const themes: Theme = {
 		},
 	},
 };
+
+type Breakpoints = {
+	mobile: string;
+	tablet: string;
+	laptop: string;
+	desktop: string;
+};
+
+export const breakpoints: Breakpoints = {
+	mobile: "320px",
+	tablet: "768px",
+	laptop: "1024px",
+	desktop: "1440px",
+};

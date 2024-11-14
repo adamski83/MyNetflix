@@ -4,7 +4,7 @@ import { themes } from "../../themes";
 
 export const InfoBoxStyledContainer = styled.div`
 	width: 75%;
-	font-size: 0.9rem;
+	font-size: 16px;
 	background: ${themes.light.darkGray};
 	box-shadow: 0 8px 32px 0 ${themes.light.parisBlue};
 	backdrop-filter: blur(5px);
@@ -31,7 +31,7 @@ export const Button = styled.button`
 	border: none;
 	border-radius: 5px;
 	padding: 8px 15px;
-	font-size: 1rem;
+	font-size: 16px;
 	cursor: pointer;
 	margin-top: 20px;
 	&:hover {

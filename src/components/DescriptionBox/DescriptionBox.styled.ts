@@ -1,11 +1,6 @@
 import styled from "styled-components";
 
-const breakpoints = {
-	mobile: "320px",
-	tablet: "768px",
-	laptop: "1024px",
-	desktop: "1440px",
-};
+import { breakpoints } from "../../themes";
 
 export const DescriptionBoxWrapper = styled.div`
 	display: flex;
@@ -17,7 +12,7 @@ export const DescriptionBoxWrapper = styled.div`
 	margin-left: 30px;
 	width: 90%;
 	backdrop-filter: blur(4.5px);
-	-webkit-backdrop-filter: blur(4.5px);
+	backdrop-filter: blur(4.5px);
 	border-radius: 10px;
 
 	@media (max-width: ${breakpoints.tablet}) {
