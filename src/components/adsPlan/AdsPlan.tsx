@@ -9,14 +9,12 @@ import { Accordion } from "../Accordion/Accordion";
 import { StyledButton } from "../Button/Button.styled";
 import { DescriptionBox } from "../DescriptionBox/DescriptionBox";
 import * as S from "../ImageContainer/ImageContainer.styled";
-import { Navbar } from "../Navbar/Navbar";
 import { Testimonial } from "../Testimonial/Testimonial";
 import { Typography } from "../typography/Typography";
 
 export const AdsPlan = () => {
 	return (
 		<>
-			<Navbar />
 			<S.AdsPlanWrapper>
 				<S.ImageContainer>
 					<S.StyledImage

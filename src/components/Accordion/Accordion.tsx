@@ -1,8 +1,7 @@
+import { Button } from "../Button/Button";
 import * as S from "./Accordion.styled";
 import { AccordionProps } from "./Accordion.types";
 import { useState } from "react";
-
-import { Button } from "../Button/Button";
 
 export const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
 	const [isOpen, setIsOpen] = useState(false);

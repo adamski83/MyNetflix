@@ -4,15 +4,16 @@ import * as S from "./Navbar.styled";
 
 export const Navbar = () => {
 	return (
-		<S.NavbarContainer>
+		<S.NavContainer>
 			<S.Logo
 				src={NetflixLogo}
-				alt="Netflix Logo"
+				alt="Netflix"
 			/>
-			<S.NavLinks>
+			<S.MobileMenuButton></S.MobileMenuButton>
+			<S.NavItems>
 				<Language />
-				<S.Button>Einloggen</S.Button>
-			</S.NavLinks>
-		</S.NavbarContainer>
+				<S.NavButton>Sign In</S.NavButton>
+			</S.NavItems>
+		</S.NavContainer>
 	);
 };

@@ -11,5 +11,5 @@ export interface ButtonProps
 	isLoading?: boolean;
 	startIcon?: React.ReactNode;
 	endIcon?: React.ReactNode;
-	justify?: CSSProperties["justifyContent"];
+	justifyContent?: CSSProperties["justifyContent"];
 }

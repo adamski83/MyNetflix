@@ -10,7 +10,6 @@ export const Button: React.FC<ButtonProps> = ({
 	startIcon,
 	endIcon,
 	disabled,
-	justify,
 	...props
 }) => {
 	return (
