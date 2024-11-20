@@ -1,6 +1,8 @@
-import NetflixLogo from "../../assets/Netflix.png";
-import { Language } from "../language/Language";
 import * as S from "./Navbar.styled";
+
+import NetflixLogo from "../../assets/Netflix.png";
+import { Button } from "../Button/Button";
+import { Language } from "../language/Language";
 
 export const Navbar = () => {
 	return (
@@ -9,10 +11,9 @@ export const Navbar = () => {
 				src={NetflixLogo}
 				alt="Netflix"
 			/>
-			<S.MobileMenuButton></S.MobileMenuButton>
 			<S.NavItems>
 				<Language />
-				<S.NavButton>Sign In</S.NavButton>
+				<Button variant="primary">Sign In</Button>
 			</S.NavItems>
 		</S.NavContainer>
 	);

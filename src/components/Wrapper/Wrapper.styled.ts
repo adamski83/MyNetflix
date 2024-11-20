@@ -11,7 +11,7 @@ export const StyledWrapper = styled.div<WrapperProps>`
 	margin: ${({ margin }) => margin || "0"};
 	align-items: ${({ align }) => align || "center"};
 	justify-content: ${({ justify }) => justify || "center"};
-	width: 75%;
+	width: ${({ width }) => width || "75%"};
 
 	@media (max-width: ${breakpoints.mobile}) {
 		flex-direction: column;

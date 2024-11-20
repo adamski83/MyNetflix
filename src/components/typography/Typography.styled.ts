@@ -63,4 +63,5 @@ export const StyledTypography = styled.div<TypographyProps>`
 	color: ${({ color }) => color || themes.light.text};
 	font-weight: ${({ weight }) => weight || "inherit"};
 	margin-bottom: ${({ gutterBottom }) => (gutterBottom ? "0.35em" : 0)};
+	width: ${({ fullWidth }) => (fullWidth ? "100%" : "auto")};
 `;

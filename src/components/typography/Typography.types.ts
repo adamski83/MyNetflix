@@ -18,4 +18,5 @@ export interface TypographyProps {
 	color?: string;
 	weight?: number;
 	gutterBottom?: boolean;
+	fullWidth?: boolean;
 }

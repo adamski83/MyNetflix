@@ -11,7 +11,7 @@ export const NavContainer = styled.nav`
 	transition: background-color 0.3s ease;
 
 	@media (max-width: ${breakpoints.tablet}) {
-		padding: 0.5rem 1rem;
+		padding: 8px 16px;
 	}
 `;
 
@@ -28,31 +28,13 @@ export const NavItems = styled.div`
 	display: flex;
 	align-items: center;
 	gap: 16px;
-
-	@media (max-width: ${breakpoints.tablet}) {
-		display: none;
-		position: absolute;
-		top: 100%;
-		left: 0;
-		right: 0;
-		flex-direction: column;
-		background-color: ${themes.light.background};
-		padding: 16px;
-		gap: 16px;
-
-		&.active {
-			display: flex;
-		}
-	}
 `;
 
 export const NavItem = styled.a`
 	color: ${themes.light.text};
 	text-decoration: none;
-	font-family: "Poppins", sans-serif;
 	font-size: 16px;
 	transition: color 0.3s ease;
-
 	&:hover {
 		color: ${themes.light.primary};
 	}
@@ -64,8 +46,7 @@ export const NavButton = styled.button`
 	border: none;
 	border-radius: 4px;
 	padding: 8px 16px;
-	font-family: "Poppins", sans-serif;
-	font-size: 1rem;
+	font-size: 16px;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
 

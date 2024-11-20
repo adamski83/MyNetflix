@@ -1,15 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import App from "../App";
 import { AdsPlan } from "../components/adsPlan/AdsPlan";
 import { ErrorPage } from "../components/error/ErrorPage";
+import { Login } from "../components/Login/Login";
 import { footerData } from "../constans";
-import { WelcomePage } from "../layouts/Home";
+import { WelcomePage } from "../pages/Home";
+import { Layout } from "../pages/Layout";
 
 export const router = createBrowserRouter([
 	{
 		path: "/",
-		element: <App />,
+		element: <Layout />,
 		errorElement: <ErrorPage />,
 		children: [
 			{
@@ -29,5 +30,10 @@ export const router = createBrowserRouter([
 			element: <h1>{item}</h1>,
 			errorElement: <ErrorPage />,
 		})),
+	},
+	{
+		path: "/login",
+		element: <Login />,
+		errorElement: <ErrorPage />,
 	},
 ]);

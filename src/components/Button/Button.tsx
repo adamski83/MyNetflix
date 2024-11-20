@@ -5,10 +5,10 @@ export const Button: React.FC<ButtonProps> = ({
 	children,
 	variant = "primary",
 	size = "medium",
-	isFullWidth = false,
-	isLoading = false,
-	startIcon,
-	endIcon,
+	isfullWidth = false,
+	isloading = false,
+	starticon,
+	endicon,
 	disabled,
 	...props
 }) => {
@@ -16,13 +16,13 @@ export const Button: React.FC<ButtonProps> = ({
 		<StyledButton
 			variant={variant}
 			size={size}
-			isFullWidth={isFullWidth}
-			disabled={disabled || isLoading}
+			isfullWidth={isfullWidth}
+			disabled={disabled || isloading}
 			{...props}
 		>
-			{startIcon && <span className="start-icon">{startIcon}</span>}
-			{isLoading ? "Loading..." : children}
-			{endIcon && <span className="end-icon">{endIcon}</span>}
+			{starticon && <span className="start-icon">{starticon}</span>}
+			{isloading ? "Loading..." : children}
+			{endicon && <span className="end-icon">{endicon}</span>}
 		</StyledButton>
 	);
 };
