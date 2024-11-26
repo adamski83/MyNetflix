@@ -1,7 +1,7 @@
-import NetflixLogo from "../../assets/Netflix.png";
-import { themes } from "../../themes";
-import { Button } from "../Button/Button";
-import { Typography } from "../typography/Typography";
+import NetflixLogo from "../../../assets/Netflix.png";
+import { themes } from "../../../themes";
+import { Button } from "../../Button/Button";
+import { Typography } from "../../typography/Typography";
 import * as S from "./Login.styled";
 
 export const Login = () => {

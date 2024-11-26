@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { footerLinks } from "../../constans.ts";
+import { footerData } from "../../constans.ts";
 import { themes } from "../../themes";
 import { Typography } from "../typography/Typography";
 import * as S from "./Footer.styled.ts";
@@ -17,7 +17,7 @@ export const Footer = () => {
 				</S.PhoneLink>
 			</Typography>
 			<S.FooterWrapContainer>
-				{footerLinks.map((item) => (
+				{footerData.map((item) => (
 					<S.FooterItemWrap key={item.link}>
 						<Typography
 							variant="body1"

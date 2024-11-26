@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
+import { breakpoints, themes } from "../../../themes";
 import { LoginProps } from "./Login.styled.types";
-import { themes, breakpoints } from "../../themes";
 
 export const Container = styled.div<LoginProps>`
 	display: flex;

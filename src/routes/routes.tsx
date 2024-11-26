@@ -2,7 +2,6 @@ import { createBrowserRouter } from "react-router-dom";
 
 import { AdsPlan } from "../components/adsPlan/AdsPlan";
 import { ErrorPage } from "../components/error/ErrorPage";
-import { Login } from "../components/Login/Login";
 import { footerData } from "../constans";
 import { WelcomePage } from "../pages/Home";
 import { Layout } from "../pages/Layout";
@@ -25,15 +24,10 @@ export const router = createBrowserRouter([
 		],
 	},
 	{
-		children: footerData.map((item) => ({
-			path: item,
-			element: <h1>{item}</h1>,
+		children: footerData.map(({ link, component }) => ({
+			path: link,
+			element: component(),
 			errorElement: <ErrorPage />,
 		})),
-	},
-	{
-		path: "/login",
-		element: <Login />,
-		errorElement: <ErrorPage />,
 	},
 ]);

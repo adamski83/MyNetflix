@@ -1,5 +1,7 @@
 import { Accordion } from "../components/Accordion/Accordion";
 import { Button } from "../components/Button/Button";
+import { CarouselComponent } from "../components/Carousel/Carousel";
+import { Convinience } from "../components/Convinience/Convinience";
 import { InfoBox } from "../components/infoBox/InfoBox";
 import { Input } from "../components/input/Input";
 import { MainBackgroundComponent } from "../components/mainBackground/MainBackground";
@@ -26,6 +28,8 @@ export const WelcomePage = () => {
 				</Wrapper>
 				<InfoBox />
 			</MainBackgroundComponent>
+			{/* <CarouselComponent /> */} {/* TODO: Fix this */}
+			<Convinience />
 			<Wrapper
 				direction="column"
 				gap="16px"
