@@ -58,7 +58,7 @@ export const themes: Theme = {
 	dark: {
 		primary: "#e50914",
 		secondary: "#b81d24",
-		background: "#000000",
+		background: "#333",
 		text: "#ffffff",
 		dimGray: "#696969",
 		zIndex: {

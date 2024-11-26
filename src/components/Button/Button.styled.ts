@@ -59,7 +59,7 @@ const getSizeStyles = (size: ButtonSize = "medium") => {
 export const StyledButton = styled.button<ButtonProps>`
 	display: inline-flex;
 	align-items: center;
-	justify-content: ${({ justifyContent }) => justifyContent || "center"};
+	justify-content: ${({ justifycontent }) => justifycontent || "center"};
 	gap: 8px;
 	border-radius: 4px;
 	font-weight: 500;
@@ -68,8 +68,8 @@ export const StyledButton = styled.button<ButtonProps>`
 
 	${({ variant }) => getVariantStyles(variant)}
 	${({ size }) => getSizeStyles(size)}
-	${({ isFullWidth }) =>
-		isFullWidth &&
+	${({ isfullWidth }) =>
+		isfullWidth &&
 		css`
 			width: 100%;
 		`}

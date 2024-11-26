@@ -1,60 +1,73 @@
 import styled from "styled-components";
 
-import { typography } from "../../styles/typography";
 import { breakpoints, themes } from "../../themes";
 
-export const NavbarContainer = styled.nav`
-	background-color: transparent;
+export const NavContainer = styled.nav`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
+	padding: 0 10px 0 10px;
+	background-color: transparent;
+	transition: background-color 0.3s ease;
+
+	@media (max-width: ${breakpoints.tablet}) {
+		padding: 8px 16px;
+	}
 `;
 
 export const Logo = styled.img`
-	width: 120px;
-	height: 100px;
+	width: 100px;
+	transition: transform 0.3s ease;
 
-	@media (max-width: 768px) {
-		width: 30%;
-		margin-right: 2em;
+	&:hover {
+		transform: scale(1.05);
 	}
 `;
 
-export const NavLinks = styled.div`
+export const NavItems = styled.div`
 	display: flex;
-	width: 25%;
 	align-items: center;
-	justify-content: center;
-	margin-right: 32px;
-	margin-left: 48px;
+	gap: 16px;
+`;
 
-	@media (max-width: ${breakpoints.tablet}) {
-		flex-direction: row;
-		width: 70%;
-		margin-right: 0;
+export const NavItem = styled.a`
+	color: ${themes.light.text};
+	text-decoration: none;
+	font-size: 16px;
+	transition: color 0.3s ease;
+	&:hover {
+		color: ${themes.light.primary};
 	}
 `;
 
-export const Button = styled.button`
-	background-color: ${themes.light.background};
-	font-family: ${typography.fontFamily.secondary};
-	padding: 10px 20px;
-	width: 120px;
-	border-radius: 5%;
-	color: ${themes.light.text};
-	border-radius: 25px;
-	outline: none;
-	font-weight: 700;
-	text-align: center;
+export const NavButton = styled.button`
+	background-color: ${themes.light.primary};
+	color: ${themes.light.background};
+	border: none;
+	border-radius: 4px;
+	padding: 8px 16px;
+	font-size: 16px;
 	cursor: pointer;
+	transition: background-color 0.3s ease;
+
+	&:hover {
+		background-color: ${themes.light.text};
+	}
+
+	@media (max-width: ${breakpoints.mobile}) {
+		width: 100%;
+		padding: 10px;
+	}
+`;
+
+export const MobileMenuButton = styled.button`
+	display: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 8px;
 
 	@media (max-width: ${breakpoints.tablet}) {
-		display: flex;
-		width: 12px;
-		font-size: 12px;
-		padding: 10px 20px;
-		margin-right: 16px;
-		margin-left: 8px;
+		display: block;
 	}
 `;

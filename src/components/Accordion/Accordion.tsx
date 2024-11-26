@@ -1,8 +1,8 @@
-import * as S from "./Accordion.styled";
-import { AccordionProps } from "./Accordion.types";
 import { useState } from "react";
 
 import { Button } from "../Button/Button";
+import * as S from "./Accordion.styled";
+import { AccordionProps } from "./Accordion.types";
 
 export const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -14,8 +14,8 @@ export const Accordion: React.FC<AccordionProps> = ({ title, content }) => {
 	return (
 		<S.AccordionWrapper>
 			<Button
-				isFullWidth
-				justifyContent="left"
+				isfullWidth
+				justifycontent="left"
 				variant="text"
 				onClick={toggleAccordion}
 			>

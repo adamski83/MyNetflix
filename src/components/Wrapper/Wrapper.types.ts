@@ -10,4 +10,5 @@ export interface WrapperProps {
 		| "flex-end"
 		| "space-between"
 		| "space-around";
+	width?: string;
 }
